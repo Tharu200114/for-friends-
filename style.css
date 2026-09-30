@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* PASSWORD SCREEN */
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* BIRTHDAY SCREEN */
+
+.birthday-screen {
+    display: none;
+
+    width: 100%;
+    max-width: 400px;
+
+    text-align: center;
+}
+
+.birthday-photo {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #e50914;
+
+    box-shadow: 0 0 30px rgba(229, 9, 20, 0.6);
+
+    margin-bottom: 25px;
+}
+
+.birthday-screen h1 {
+    font-size: 32px;
+    color: #ff3040;
+
+    margin-bottom: 10px;
+}
+
+.birthday-screen h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.birthday-screen p {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.7;
+}
+/* Birthday animation */
+
+.birthday-screen {
+    animation: fadeIn 1.5s ease;
+}
+
+.birthday-photo {
+    animation: photoGlow 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes photoGlow {
+    from {
+        box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+    }
+
+    to {
+        box-shadow: 0 0 40px rgba(229, 9, 20, 0.9);
+    }
+}
+/* Memories Screen */
+
+.memories-screen {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.memories-screen h1 {
+    font-size: 30px;
+    color: #ff3040;
+    margin-bottom: 12px;
+}
+
+.memory-intro {
+    color: #ccc;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.memory-card {
+    background: #111;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.memory-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.memory-card h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.memory-card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+/* ================================
+   BIRTHDAY MESSAGE SCREEN
+================================ */
+
+.message-screen {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.message-screen h1 {
+    font-size: 28px;
+    color: #ff3040;
+    margin-bottom: 25px;
+}
+
+.message-card {
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.15);
+}
+
+.message-card p {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.message-card p:last-child {
+    margin-bottom: 0;
+}
+/* FRIENDS' WISHES */
+
+.friends-wishes-screen {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.friends-wishes-screen h1 {
+    font-size: 28px;
+    color: #ff3040;
+    margin-bottom: 10px;
+}
+
+.friends-intro {
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.wish-card {
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 18px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.12);
+}
+
+.wish-card h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.wish-card .relationship {
+    color: #ff3040;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.wish-card p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.7;
+}
