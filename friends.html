@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secret Surprise 🤫</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container" id="friendLogin">
+
+        <h1>🤫 SECRET SURPRISE</h1>
+
+        <p>
+            Hey Sangeetha's friend! ❤️
+            <br><br>
+            We are preparing a little surprise for Sangeetha.
+            <br>
+            Please keep this a secret! 🤫🎁
+        </p>
+
+        <input
+            type="password"
+            id="friendPassword"
+            placeholder="Enter secret password"
+        >
+
+        <button id="friendUnlock">
+            UNLOCK ❤️
+        </button>
+
+    </div>
+
+
+    <div class="container" id="friendWelcome" style="display: none;">
+
+        <h1>Hey Sangeetha's Friend! 👋❤️</h1>
+
+        <p>
+            Shall we prepare a special surprise for her? 🎂🎁
+            <br><br>
+            Please don't tell Sangeetha about this.
+            🤫❤️
+        </p>
+
+        <button id="nextButton">
+            NEXT ❤️
+        </button>
+
+    </div>
+
+
+    <script>
+
+        const friendPassword = document.getElementById("friendPassword");
+        const friendUnlock = document.getElementById("friendUnlock");
+
+        const friendLogin = document.getElementById("friendLogin");
+        const friendWelcome = document.getElementById("friendWelcome");
+
+        friendUnlock.addEventListener("click", function () {
+
+            if (friendPassword.value === "1430") {
+
+                friendLogin.style.display = "none";
+                friendWelcome.style.display = "block";
+
+            } else {
+
+                alert("Wrong password 🔒");
+
+            }
+
+        });
+const nextButton = document.getElementById("nextButton");
+
+nextButton.addEventListener("click", function () {
+    window.location.href = "https://tally.so/r/9qbWXV";
+});
+    </script>
+
+</body>
+
+</html>
